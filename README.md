@@ -17,7 +17,20 @@
 
 ## How can I use it?
 
-TBD
+Launch a contianer:
+
+```
+you@yourmachine$ docker run --rm -ti -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix mmodenesi/omnetpy bash
+```
+
+On the container, launch the omnetpp IDE:
+
+```
+userpp@container$ omnetpp
+```
+
+Follow the guides on how to create simulations with python (TBD)
+
 
 ## Who could be interested in this?
 
