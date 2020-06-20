@@ -4,6 +4,8 @@ jobs:
   build:
     runs-on: "ubuntu-latest"
     steps:
+      - name: "wtf"
+        run: pwd && find .
       - name: "the build"
         uses: docker/build-push-action@v1
         with:
