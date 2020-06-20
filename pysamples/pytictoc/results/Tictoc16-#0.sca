@@ -1,0 +1,98 @@
+version 2
+run Tictoc16-0-20200219-02:57:09-1253
+attr configname Tictoc16
+attr datetime 20200219-02:57:09
+attr experiment Tictoc16
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Tictoc16
+attr processid 1253
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+statistic Tictoc16.tic[0] hopCount:stats
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source arrival
+attr title "hop count, stats"
+statistic Tictoc16.tic[1] hopCount:stats
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source arrival
+attr title "hop count, stats"
+statistic Tictoc16.tic[1] hopCount:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source arrival
+attr title "hop count, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic Tictoc16.tic[2] hopCount:stats
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source arrival
+attr title "hop count, stats"
+statistic Tictoc16.tic[3] hopCount:stats
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source arrival
+attr title "hop count, stats"
+statistic Tictoc16.tic[4] hopCount:stats
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source arrival
+attr title "hop count, stats"
+statistic Tictoc16.tic[5] hopCount:stats
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source arrival
+attr title "hop count, stats"
+

@@ -1,0 +1,74 @@
+file 4590 1581891495                                            
+version 2
+run CQN-B-0-20200216-22:18:10-20130
+attr configname CQN-B
+attr datetime 20200216-22:18:10
+attr experiment CQN-B
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network ClosedQueueingNetB
+attr processid 20130
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.sDelay 100s
+param *.numTandems 3
+param *.tandemQueue[*].numQueues 5
+param *.tandemQueue[*].queue[*].numInitialJobs 2
+param *.tandemQueue[*].queue[*].serviceTime exponential(10s)
+param *.tandemQueue[*].qDelay 1s
+param *.tandemQueue[0]**.priority 0
+param *.tandemQueue[1]**.priority 1
+param *.tandemQueue[2]**.priority 2
+
+vector 0 ClosedQueueingNetB.tandemQueue[0].queue[0] queueLength ETV
+vector 1 ClosedQueueingNetB.tandemQueue[0].queue[1] queueLength ETV
+vector 2 ClosedQueueingNetB.tandemQueue[0].queue[2] queueLength ETV
+vector 3 ClosedQueueingNetB.tandemQueue[0].queue[3] queueLength ETV
+vector 4 ClosedQueueingNetB.tandemQueue[0].queue[4] queueLength ETV
+vector 5 ClosedQueueingNetB.tandemQueue[1].queue[0] queueLength ETV
+vector 6 ClosedQueueingNetB.tandemQueue[1].queue[1] queueLength ETV
+vector 7 ClosedQueueingNetB.tandemQueue[1].queue[2] queueLength ETV
+vector 8 ClosedQueueingNetB.tandemQueue[1].queue[3] queueLength ETV
+vector 9 ClosedQueueingNetB.tandemQueue[1].queue[4] queueLength ETV
+vector 10 ClosedQueueingNetB.tandemQueue[2].queue[0] queueLength ETV
+vector 11 ClosedQueueingNetB.tandemQueue[2].queue[1] queueLength ETV
+vector 12 ClosedQueueingNetB.tandemQueue[2].queue[2] queueLength ETV
+vector 13 ClosedQueueingNetB.tandemQueue[2].queue[3] queueLength ETV
+vector 14 ClosedQueueingNetB.tandemQueue[2].queue[4] queueLength ETV
+0	1711 24 0 0 0 0 3 1 2 4 6
+1	1735 24 0 0 0 0 3 1 2 4 6
+2	1759 24 0 0 0 0 3 1 2 4 6
+3	1783 24 0 0 0 0 3 1 2 4 6
+4	1807 24 0 0 0 0 3 1 2 4 6
+5	1831 24 0 0 0 0 3 1 2 4 6
+6	1855 24 0 0 0 0 3 1 2 4 6
+7	1879 44 0 1 0 0.63475656614 4 0 2 4 6
+8	1923 24 0 0 0 0 3 1 2 4 6
+9	1947 24 0 0 0 0 3 1 2 4 6
+10	1971 27 0 0 0 0 3 1 2 4 6
+11	1998 27 0 0 0 0 3 1 2 4 6
+12	2025 27 0 0 0 0 3 1 2 4 6
+13	2052 27 0 0 0 0 3 1 2 4 6
+14	2079 27 0 0 0 0 3 1 2 4 6
+6	2106 21 2 2 0.665223380669 0.665223380669 1 0 0 0 0
+0	2127 194 5 196 1.369734266668 131.938390633129 8 0 3 10 20
+1	2321 166 10 197 2.369734266668 132.139032664459 7 0 3 11 23
+2	2487 117 4 159 0.957295570234 93.267227523088 5 0 2 4 6
+3	2604 110 9 37 1.957295570234 11.409395691787 5 0 2 6 10
+4	2714 303 15 167 3.677829947489 100.658621384665 13 0 4 26 74
+5	3017 95 16 198 3.75350726685 132.320324711948 4 0 3 6 14
+6	3112 43 19 20 4.75350726685 4.869595599299 2 0 1 1 1
+7	3155 138 24 116 5.869595599299 58.508652252759 6 0 2 5 7
+8	3293 201 6 94 1.63475656614 36.710897432133 9 0 3 12 24
+9	3494 252 30 112 9.749927611561 56.075048070644 11 0 3 17 37
+10	3746 23 23 23 5.804463707953 5.804463707953 1 0 0 0 0
+11	3769 118 27 75 6.804463707953 21.039154899078 5 0 2 6 10
+12	3887 170 14 130 3.464397464363 71.122168411951 7 0 3 9 19
+13	4057 267 17 151 4.358797379481 86.690558436714 11 0 2 7 9
+14	4324 265 21 163 5.358797379481 99.468222209649 11 0 4 19 49
+
