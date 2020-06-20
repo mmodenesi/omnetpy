@@ -4,9 +4,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: "wtf"
-        run: find /
-      - name: "the build"
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: "Build and push"
         uses: docker/build-push-action@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
