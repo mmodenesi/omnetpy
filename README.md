@@ -31,10 +31,12 @@ userpp@container$ omnetpp
 
 Follow the guides on how to create simulations with python (TBD)
 
-
 ## Who could be interested in this?
 
-TBD
+- You want to build simulations using OMNeT++ but your C++ knowledge is weak.
+- You want to use OMNeT++ for educational purposes, and your students are more proficient in python than C++.
+- You want to prototype a model faster, you can rewrite the code in C++ later.
+- You are interested in making changes to the code and being able to use it without any extra compilation steps.
 
 ## What are the limitations?
 
