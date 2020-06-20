@@ -12,5 +12,6 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: mmodenesi/omnetpy
-          tags: latest
+          tags: latest,opp-6.0pre8
           tag_with_ref: true
+          build_args: OMNETPP_VERSION=6.0pre8
