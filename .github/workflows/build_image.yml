@@ -2,9 +2,10 @@ on: [push]
 
 jobs:
   build:
+    runs-on: ubuntu-latest
     steps:
       - name: "wtf"
-        run: pwd && find .
+        run: find /
       - name: "the build"
         uses: docker/build-push-action@v1
         with:
