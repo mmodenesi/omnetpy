@@ -6,8 +6,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Debug
-        run: echo "lala" ${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_PASSWORD }}
       - name: "Build and push"
         uses: docker/build-push-action@v1
         with:
