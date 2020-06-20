@@ -5,7 +5,7 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - name: "wtf"
-        run: pwd && find .
+        run: pwd && find /home/runner/work/omnetpy/omnetpy
       - name: "the build"
         uses: docker/build-push-action@v1
         with:
