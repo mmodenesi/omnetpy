@@ -13,7 +13,17 @@
 - faster prototypes
 - even using the OMNeT++ IDE (if you wish...)
 
-**Ok, I'm in... tell me more...**: TBD
+**Ok, I'm in... tell me more...**:
+
+Leveraging some design desitions made in the original project, it is possible to have OMNeT++
+launch a python interpreter and instantiate classes you wrote in python, and use them as regular
+``cSimpleModule`` sublcasses.
+
+The original code for OMNeT++ needs no chang. This repository provides python bindings for C++
+APIs (to allow the user subclass ``cSimpleModule`` from python) and some C++ headers to have
+OMNeT++ accept this code.
+
+The project is the result of an academic research, see current state and limitations below.
 
 ## How can I use it?
 
@@ -29,7 +39,7 @@ On the container, launch the omnetpp IDE:
 userpp@container$ omnetpp
 ```
 
-Follow the guides on how to create simulations with python (TBD)
+Follow the [guide](./getstarted) on how to create simulations with python.
 
 ## Who could be interested in this?
 
@@ -42,11 +52,11 @@ Follow the guides on how to create simulations with python (TBD)
 
 - Dynamic deletion of modules is not supported (the ``dyna`` sample could not be ported).
 - python code debugging is not supported
-- automatic code generation for messages is not supported (yet, being python so flexible, its not
+- Automatic code generation for messages is not supported (yet, being python so flexible, its not
   missed, either).
 - The python bindings were written by hand (an activity that could be automated) and may have mistakes.
 - The python bindings were written as needed in order to port the OMNeT++ samples. Not 100% of the
-  C++ APIS were ported (though it may be easy to include what is missing).
+  C++ APIs were ported (though it may be easy to include what is missing).
 - This is an academic project. Many things were written "just to make it work" and may not scale well.
 - This project was not heavily used.
 
