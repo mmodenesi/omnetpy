@@ -15,11 +15,11 @@
 
 **Ok, I'm in... tell me more...**:
 
-Leveraging some design desitions made in the original project, it is possible to have OMNeT++
-launch a python interpreter and instantiate classes you wrote in python, and use them as regular
-``cSimpleModule`` sublcasses.
+Leveraging some design decitions made in the original project, it is possible to have OMNeT++
+launch a python interpreter and instanciate classes you wrote in python, and use them as regular
+``cSimpleModule`` subclasses.
 
-The original code for OMNeT++ needs no chang. This repository provides python bindings for C++
+The original code for OMNeT++ needs no change. This repository provides python bindings for C++
 APIs (to allow the user subclass ``cSimpleModule`` from python) and some C++ headers to have
 OMNeT++ accept this code.
 
@@ -48,6 +48,14 @@ Follow the [guide](./getstarted) on how to create simulations with python.
 - You want to prototype a model faster, you can rewrite the code in C++ later.
 - You are interested in making changes to the code and being able to use it without any extra compilation steps.
 
+## What is the current state of this project?
+
+- Excepting ``dyna``, all OMNeT++ demostrative samples were successfuly ported to python (see
+  [pysamples](./pysamples)), which means it is fairly usable.
+- The original goal of the project was to enable python implementation of OMNeT++ simluations,
+  which was largely achieved.  For the moment, no further improvements are being implemented
+  (automatic bindings generation, QA, docker images for each release of OMNeT++, etc).
+
 ## What are the limitations?
 
 - Dynamic deletion of modules is not supported (the ``dyna`` sample could not be ported).
@@ -58,11 +66,4 @@ Follow the [guide](./getstarted) on how to create simulations with python.
 - The python bindings were written as needed in order to port the OMNeT++ samples. Not 100% of the
   C++ APIs were ported (though it may be easy to include what is missing).
 - This is an academic project. Many things were written "just to make it work" and may not scale well.
-- This project was not heavily used.
-
-## What is the current state of this project?
-
-- Excepting ``dyna``, all OMNeT++ demostrative samples were successfuly ported to python (see
-  [pysamples](./pysamples)), which means it is fairly usable.
-- The goal of the project was to enable simulations written in python, and it was largely achieved.
-  Many things could be improved, but I am not currently working on this. Use at your own risk.
+- This project was **not** heavily used.
