@@ -39,7 +39,8 @@ On the container, launch the omnetpp IDE:
 userpp@container$ omnetpp
 ```
 
-Follow the [guide](./getstarted) on how to create simulations with python.
+- Follow the [guide](./getstarted) on how to create simulations with python.
+- Go [deeper](./advanced).
 
 ## Who could be interested in this?
 

@@ -131,4 +131,4 @@ choose _OMNeT++ Simulation_.
 After compilation (this is the only time there compilation is required) you should see the
 simulation window:
 
-![simulation](./img/new_run.png)
+![simulation](./img/simulation.png)
