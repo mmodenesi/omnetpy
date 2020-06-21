@@ -40,6 +40,19 @@ Follow the guides on how to create simulations with python (TBD)
 
 ## What are the limitations?
 
-TBD
+- Dynamic deletion of modules is not supported (the ``dyna`` sample could not be ported).
+- python code debugging is not supported
+- automatic code generation for messages is not supported (yet, being python so flexible, its not
+  missed, either).
+- The python bindings were written by hand (an activity that could be automated) and may have mistakes.
+- The python bindings were written as needed in order to port the OMNeT++ samples. Not 100% of the
+  C++ APIS were ported (though it may be easy to include what is missing).
+- This is an academic project. Many things were written "just to make it work" and may not scale well.
+- This project was not heavily used.
 
 ## What is the current state of this project?
+
+- Excepting ``dyna``, all OMNeT++ demostrative samples were successfuly ported to python (see
+  [pysamples](./pysamples)), which means it is fairly usable.
+- The goal of the project was to enable simulations written in python, and it was largely achieved.
+  Many things could be improved, but I am not currently working on this. Use at your own risk.
