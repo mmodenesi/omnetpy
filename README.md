@@ -9,7 +9,7 @@
 **TL;DR**: implement OMNeT++ simulations using python programming language:
 
 - no need to know C++
-- all the power of python is sudenly available
+- all the power of python is suddenly available
 - faster prototypes
 - even using the OMNeT++ IDE (if you wish...)
 
