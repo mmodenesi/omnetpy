@@ -98,6 +98,8 @@ LIBS = -lomnetpy $(shell python3-config --libs | cut -d" " -f1)
 LDFLAGS += -L$(OMNETPY_ROOT)/lib
 ```
 
+NOTE: if you are using python3.8 or greater, you need to replace `python3-config --libs` with `python3-config --libs --embed`.
+
 **IMPORTANT**: Steps 3 and 4 are all the C++ related stuff you need. Step 3 is telling OMNeT++
 that whenever it needs to create an instance of ``PyTxc``, then it should look for it in the file
 _tcx.py_ (which we'll create in a moment). Step 4 makes the compilation possible.
