@@ -1,4 +1,4 @@
-FROM ubuntu:19.10 as base
+FROM ubuntu:20.04 as base
 MAINTAINER Marcos Modenesi <marcosmodenesi@gmail.com>
 
 # install basic packages
@@ -8,7 +8,7 @@ RUN apt-get update && apt-get dist-upgrade -y \
         build-essential gcc g++ bison flex perl \
         qt5-default tcl-dev tk-dev libxml2-dev zlib1g-dev \
         default-jre doxygen graphviz  \
-        libopenscenegraph-3.4-dev openscenegraph-plugin-osgearth \
+        libopenscenegraph-dev openscenegraph-plugin-osgearth \
         openmpi-bin libopenmpi-dev \
         python3 libqt5opengl5-dev \
         openscenegraph-plugin-osgearth libosgearth-dev \
