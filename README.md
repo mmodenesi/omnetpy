@@ -73,3 +73,8 @@ userpp@container$ omnetpp
 - This project was **not** heavily used.
 - The optimization of the docker image (size, layering, etc.) was never a top priority.
 - Launching graphical applications (OMNeT++ IDE, simluations) from docker was only tested on ubuntu.
+
+## Licence
+
+As a derivative work of OMNeT++, this code is distributed under [Academic Public Licence version
+1.1](https://github.com/omnetpp/omnetpp/blob/master/doc/License).
